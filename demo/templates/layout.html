@@ -1,0 +1,16 @@
+<html>
+<title>Flask App</title>
+      <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+<head>
+</head>
+</body>
+<div>hello User !</div>
+<li><a href="{{ url_for('home')}}">home</a></li>
+<li><a href="{{ url_for('about')}}">about</a></li>
+<div>
+{% block content %}
+{% endblock %}
+<div>
+</body>
+</html>
+
